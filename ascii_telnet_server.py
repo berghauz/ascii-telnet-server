@@ -97,8 +97,8 @@ if __name__ == "__main__":
     parser.add_option("-f", "--file", dest="filename", metavar="FILE",
                       help="Text file containing the ASCII movie")
     parser.add_option("-i", "--interface", dest="interface",
-                      help="Bind to this interface (default '0.0.0.0', all interfaces)",
-                      default="0.0.0.0")
+                      help="Bind to this interface (default '::', all interfaces)",
+                      default="::")
     parser.add_option("-p", "--port", dest="port", metavar="PORT",
                       help="Bind to this port (default 23, Telnet)",
                       default=23, type="int")
@@ -106,7 +106,7 @@ if __name__ == "__main__":
                       help="Verbose (default for TCP server)")
     parser.add_option("-q", "--quiet", action="store_false", dest="verbose",
                       help="Quiet! (default for STDIN STDOUT server)")
-    parser.set_defaults(interface="0.0.0.0",
+    parser.set_defaults(interface="::",
                         port=23,
                         tcpserv=True,
                         verbose=True, )
