@@ -41,6 +41,7 @@ except ImportError:  # Py2
 
 
 class ThreadedTCPServer(ThreadingMixIn, TCPServer):
+    address_family = socket.AF_INET6
     daemon_threads = True
 
 
