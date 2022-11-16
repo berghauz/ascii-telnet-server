@@ -1,5 +1,7 @@
 ASCII art movie Telnet player
 =============================
+IPV6 dual-stack adopted
+=============================
 
 Can stream an ~20 minutes ASCII movie via Telnet emulation
 as stand alone server or via xinetd daemon. 
